@@ -1,4 +1,4 @@
- # Java-A-Intro-20453
+# Java-A-Intro-20453
 
 A collection of Java assignments completed as part of course 20453 – Introduction to Computer Science and Java A.
 
