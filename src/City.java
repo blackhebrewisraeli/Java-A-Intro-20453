@@ -24,13 +24,12 @@ public class City {
     /**
      * Formats a city's information as a string.
      *
-     * @param city the city to format
      * @return formatted string containing city details
      */
     private String cityToString() {
         return String.format(
             "City Name: %s\n" +
-            "Date of Establishment: " +
+            "Date of Establishment: %s\n" +
             "City Center: %s\n" +
             "Central Station: %s\n" +
             "Number of Residents: %d\n" +
@@ -72,6 +71,7 @@ public class City {
      */
     public City(City other) {
         this._cityName = other.getCityName();
+        this._dateEstablished = new Date(other._dateEstablished);
         this._cityCenter = new Point(other.getCityCenter());
         this._centralStation = new Point(other.getCentralStation());
         this._noOfNeighborhoods = (other.getNoOfNeighborhoods() < 1) ? 1 : other.getNoOfNeighborhoods();
